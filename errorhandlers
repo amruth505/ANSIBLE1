@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install git
+    apt:
+     name: git
+
+  - name: install wget
+    apt:
+     name: wget
+
+  - name: install tree
+    apt:
+     name: tree      
