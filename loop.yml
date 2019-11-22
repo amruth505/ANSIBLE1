@@ -1,0 +1,14 @@
+---
+hosts:
+become: 
+tasks:
+- name: loop
+  apt:
+   name: "{{item}}"
+   state:
+  loop:
+    -git:
+    -wget:
+    -tree:
+
+    
